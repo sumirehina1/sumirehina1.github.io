@@ -62,7 +62,7 @@ var scaleBar = new ScaleBar({
 });
 
 view.ui.add(scaleBar, {
-  position: "bottom-left"
+  position: "top-left"
 });
 
      var coordsWidget = document.createElement("div");
@@ -70,7 +70,7 @@ view.ui.add(scaleBar, {
       coordsWidget.className = "esri-widget esri-component";
       coordsWidget.style.padding = "7px 15px 5px";
 
-      view.ui.add(coordsWidget, "bottom-right");
+      view.ui.add(coordsWidget, "top-right");
       function showCoordinates(pt) {
         var coords = "Lat/Lon " + pt.latitude.toFixed(3) + " " + pt.longitude.toFixed(3) +
             " | Scale 1:" + Math.round(view.scale * 1) / 1 +
